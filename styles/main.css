@@ -1,0 +1,63 @@
+/* 영역 별 색상 */
+.container {
+  background-color: azure;
+}
+.header {
+  background-color: pink;
+}
+.visual {
+  background-color: salmon;
+}
+.main {
+  background-color: green;
+  height: 60vh;
+}
+
+.group1 {
+  background-color: yellow;
+}
+
+.group2 {
+  background-color: aqua;
+}
+
+.group3 {
+  background-color: lime;
+}
+.slogan {
+  background-color: blueviolet;
+}
+
+.footer-wrapper {
+  background-color: silver;
+}
+
+.footer {
+  background-color: gray;
+}
+
+/* 레이아웃 */
+.header,
+.visual,
+.main,
+.slogan,
+.footer {
+  width: 940px;
+  margin-inline: auto;
+}
+
+.main {
+  display: flex;
+  flex-flow: row nowrap;
+  padding-block: 28px 16px;
+  padding-inline: 16px;
+  .group1 {
+    width: 250px;
+  }
+  .group2 {
+    width: 250px;
+  }
+  .group3 {
+    width: 250px;
+  }
+}
