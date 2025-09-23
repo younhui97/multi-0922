@@ -3,14 +3,56 @@
   /* background-color: azure; */
 }
 
-.header {
-  background-color: pink;
-  height: 10vh;
+/* 로고 */
+.logo {
+  /* background-color: blue; */
+  position: absolute;
+  top: 64px;
+  left: 48px;
 }
 
+/* 헤더 */
+.header {
+  position: relative;
+  background-color: #fff;
+  border-radius: 0 0 15px 15px;
+  padding: 0 30px;
+}
+
+/* 로고 */
+/* postion 레이아웃 */
+.logo {
+  position: absolute;
+  top: 64px;
+  left: 48px;
+}
+
+/* 유틸리티 메뉴 */
+.utility-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  padding: 4px 0;
+  gap: 8px;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  left: 8px;
+
+  li {
+    display: contents;
+    a {
+      padding: 4px 8px;
+      text-transform: uppercase;
+    }
+  }
+}
+/*네비게이션*/
+.navigation {
+  /* color: blue; */
+}
 .visual {
   background-color: salmon;
-  height: 10vh;
 }
 
 .main {
@@ -23,7 +65,7 @@
 }
 
 .group2 {
-  background-color: aqua;
+  background-color: orange;
 }
 
 .group3 {
