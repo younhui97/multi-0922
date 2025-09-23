@@ -1,3 +1,8 @@
+:root {
+  --primary: #d16527;
+  --secondary: #edad2d;
+}
+
 /* 영역 별 색상 및 높이 */
 .container {
   /* background-color: azure; */
@@ -17,14 +22,6 @@
   background-color: #fff;
   border-radius: 0 0 15px 15px;
   padding: 0 30px;
-}
-
-/* 로고 */
-/* postion 레이아웃 */
-.logo {
-  position: absolute;
-  top: 64px;
-  left: 48px;
 }
 
 /* 유틸리티 메뉴 */
@@ -50,6 +47,12 @@
 /*네비게이션*/
 .navigation {
   /* color: blue; */
+}
+/* 로고 */
+.logo {
+  position: absolute;
+  top: 50px;
+  left: 48px;
 }
 .visual {
   background-color: salmon;
@@ -137,5 +140,33 @@
     flex-shrink: 1;
     flex-basis: 190px; */
     /* flex: 0 1 max-content; */
+  }
+}
+
+.menu {
+  background-color: var(--primary);
+  background-image: linear-gradient(to bottom, var(--secondary) 0%, var(--primary) 20%, var(--primary) 80%, var(--secondary) 100%);
+  display: flex;
+  flex-flow: row nowrap;
+  list-style: none;
+  padding-inline-start: 0;
+  justify-content: end;
+  border-block-start: black;
+  .sub-menu {
+    background-color: pink;
+    position: absolute;
+    display: none;
+  }
+  .menu-item {
+    border-left: 2px solid #ffff;
+  }
+  .menu-button {
+    border: 0;
+    padding: 8px 20px;
+    background: transparent;
+    font-size: 18px;
+    color: #fff;
+    font-weight: 700;
+    text-shadow: 1px 1px 0 #000, 2px 2px 0 #000, 3px 3px 0 #000, 4px 4px 0 #000;
   }
 }
