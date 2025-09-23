@@ -7,6 +7,7 @@
 }
 .visual {
   background-color: salmon;
+  height: 10vh;
 }
 .main {
   background-color: green;
@@ -42,7 +43,12 @@
 .main,
 .slogan,
 .footer {
+  box-sizing: border-box;
   width: 940px;
+  height: 300px;
+  /* border: 10px solid red; */
+  padding: 20px;
+  margin-block: 0;
   margin-inline: auto;
 }
 
@@ -53,11 +59,14 @@
   padding-inline: 16px;
   .group1 {
     width: 250px;
+    margin-inline: auto;
   }
   .group2 {
-    width: 250px;
+    width: 380px;
+    margin-inline: auto;
   }
   .group3 {
-    width: 250px;
+    width: 190px;
+    margin-inline: auto;
   }
 }
