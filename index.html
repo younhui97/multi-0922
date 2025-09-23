@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>웹카페 - 멀티캠퍼스</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css" />
     <link rel="stylesheet" href="./styles/index.css" type="text/css" />
     <link rel="stylesheet" href="./styles/main.css" type="text/css" />
     <script type="module" src="./scripts/main.js"></script>
@@ -11,7 +12,17 @@
   <body>
     <div class="container">
       <header class="header">
-        <h1>웹카페</h1>
+        <h1 class="logo">
+          <a href="/"><img src="./assets/logo.png" alt="webcafe" /></a>
+        </h1>
+        <ul>
+          <li><a href="/">홈</a></li>
+          <li><span aria-hidden="true">:</span><a href="/">로그인</a></li>
+          <li><span aria-hidden="true">:</span><a href="/">회원가입</a></li>
+          <li><span aria-hidden="true">:</span><a href="/">사이트맵</a></li>
+          <li><span aria-hidden="true">:</span><a href="/">english</a></li>
+        </ul>
+
         <nav class="navigation">내비게이션</nav>
       </header>
       <div class="visual">비추얼</div>
@@ -21,7 +32,7 @@
         <div class="group group3">그룹3</div>
       </main>
       <article class="slogan">슬로건</article>
-      <footerwrapper><footer class="footer">푸터</footer></footerwrapper>
+      <div class="footer-wrapper"><footer class="footer">푸터</footer></div>
     </div>
   </body>
 </html>

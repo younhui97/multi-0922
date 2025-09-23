@@ -1,14 +1,18 @@
-/* 영역 별 색상 */
+/* 영역 별 색상 및 높이 */
 .container {
-  background-color: azure;
+  /* background-color: azure; */
 }
+
 .header {
   background-color: pink;
+  height: 10vh;
 }
+
 .visual {
   background-color: salmon;
   height: 10vh;
 }
+
 .main {
   background-color: green;
   height: 60vh;
@@ -25,8 +29,10 @@
 .group3 {
   background-color: lime;
 }
+
 .slogan {
   background-color: blueviolet;
+  height: 10vh;
 }
 
 .footer-wrapper {
@@ -35,6 +41,7 @@
 
 .footer {
   background-color: gray;
+  height: 10vh;
 }
 
 /* 레이아웃 */
@@ -43,30 +50,50 @@
 .main,
 .slogan,
 .footer {
-  box-sizing: border-box;
   width: 940px;
-  height: 300px;
-  /* border: 10px solid red; */
-  padding: 20px;
-  margin-block: 0;
+  inline-size: 940px;
+  margin-left: auto;
+  margin-right: auto;
   margin-inline: auto;
+  /* border: 10px solid red;
+  padding: 20px; */
+  /* margin: 0 auto; */
+  /* margin-block: 0; */
 }
 
 .main {
   display: flex;
+  /* flex-direction: row;
+  flex-wrap: nowrap; */
   flex-flow: row nowrap;
-  padding-block: 28px 16px;
-  padding-inline: 16px;
+  justify-content: space-evenly;
+  align-items: stretch;
+  padding-block: 30px;
+  background-color: #fff;
+  border-radius: 15px 15px 0 0;
+
   .group1 {
     width: 250px;
-    margin-inline: auto;
+    /* order: 1; */
+    /* flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 250px; */
+    /* flex: 0 1 max-content; */
   }
+
   .group2 {
     width: 380px;
-    margin-inline: auto;
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 380px; */
+    /* flex: 1 1 0; */
   }
+
   .group3 {
     width: 190px;
-    margin-inline: auto;
+    /* flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 190px; */
+    /* flex: 0 1 max-content; */
   }
 }
