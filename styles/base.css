@@ -1,20 +1,13 @@
 html,
 body {
   font-family: "Pretendard Variable";
-  background-color: lightgray;
-}
-a {
-  /* background-color: yellow; */
-  display: block;
-  text-decoration: none;
-  /* color: inherit; */
-  /* border: inherit; */
+  background-color: #999;
+  color: #121212;
 }
 
-/* 유틸리티 메뉴 */
-.utility-menu {
-  /* color: red; */
-}
-.navigation {
-  color: blue;
+/* 하이퍼 링크 */
+a {
+  display: block;
+  text-decoration: none;
+  color: inherit;
 }
