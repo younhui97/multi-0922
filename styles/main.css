@@ -20,6 +20,8 @@
 }
 
 .main {
+  /* background-color: green; */
+  /* height: 60vh; */
 }
 
 .group1 {
@@ -403,6 +405,10 @@
     border: 1px solid #aaa;
     padding: 8px 20px 8px 36px;
     border-radius: 37px;
+    /* 높이를 고정 값으로 사용할 경우 */
+    /* height: 37px; */
+    /* line-height: 37px; */
+    /* align-content: center; */
 
     &:hover,
     &:focus {
@@ -412,5 +418,48 @@
     &:focus-visible {
       box-shadow: none;
     }
+  }
+}
+
+/* 웹 관련 용어 */
+.term {
+  background: #ccc linear-gradient(to bottom, #aaa, #ccc, #eee);
+  border: 1px solid #aaa;
+  padding: 16px;
+  border-radius: 5px;
+  line-height: 1.5;
+
+  .term-title {
+    font-size: 0.9375rem;
+    font-weight: 700;
+  }
+
+  .term-item {
+    background-color: yellow;
+    margin-top: 12px;
+    position: relative;
+    display: flow-root;
+
+    .term-subject,
+    .term-description {
+      float: right;
+      width: calc(100% - 60px);
+      padding-left: 16px;
+    }
+  }
+
+  .term-item:nth-of-type(even) {
+    .term-subject,
+    .term-description {
+      float: left;
+      padding-left: 0;
+      padding-right: 16px;
+    }
+  }
+
+  .term-subject {
+    color: #296798;
+    font-size: 0.875rem;
+    font-weight: 600;
   }
 }
